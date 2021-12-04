@@ -1,1 +1,4 @@
 default: --publish-quiet
+
+html: --publish-quiet --format html --out=reports/report.html
+json: --publish-quiet --format json --out=reports/report.json
