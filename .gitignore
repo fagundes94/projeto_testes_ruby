@@ -1,4 +1,4 @@
 Gemfile.lock
 .vscode/
-/reports/*.html
-/reports/*.json
+reports/*.html
+reports/*.json
