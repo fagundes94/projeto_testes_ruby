@@ -10,6 +10,7 @@ pipeline {
             steps {
                 echo 'Building or resolving dependencies'
                 sh 'bundle install'
+                sh 'gem install httparty'
             }
         }
         stage('Test') {

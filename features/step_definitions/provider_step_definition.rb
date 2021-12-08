@@ -1,7 +1,4 @@
 
-
-    
-
 Quando('é realizado uma request') do
     @request = Crud.new
     $requesst = @request.create
