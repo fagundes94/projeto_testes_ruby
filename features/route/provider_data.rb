@@ -1,4 +1,4 @@
-require 'HTTParty'
+require 'httparty'
 require 'httparty/request'
 require 'httparty/response/headers'
 require 'faker'
