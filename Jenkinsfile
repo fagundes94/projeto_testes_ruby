@@ -15,7 +15,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running regressions tests'
-                sh 'bundle exec cucumber -p html'
+                sh 'bundle exec cucumber -p json'
+                cucumber buildStatus: 'null', customCssFiles: '', customJsFiles: '', failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', jsonReportDirectory: 'reports', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
             }
         }
         stage('UAT') {
